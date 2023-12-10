@@ -9,4 +9,51 @@ body {
 	background: url('./images/bg.gif') center/cover no-repeat;
 	color: #ffffff;
 	margin: 0;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+section {
+	background: rgba(0, 0, 0, 0.2);
+	border-radius: 20px;
+	padding: 2rem;
+	box-shadow: 0 6px 10px rgba(15, 15, 15, 0.1);
+	transition: background 0.5s ease, box-shadow 0.3s ease;
+	text-align: center;
+}
+
+section:hover {
+	background: rgba(0, 0, 0, 0.4);
+	box-shadow: 0 8px 12px rgba(36, 36, 36, 0.3);
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 1rem;
+}
+
+td {
+	padding: 1rem;
+	text-align: left;
+	border: 1px solid;
+}
+
+td:nth-child(1) {
+	text-transform: uppercase;
+}
+
+td:nth-child(2) {
+	text-align: right;
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 3rem;
+}
 
