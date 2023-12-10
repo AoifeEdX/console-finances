@@ -43,3 +43,33 @@ const numberFormatter = new Intl.NumberFormat("en-GB", {
 				//? Intl.NumberFormat("en-GB" ...
 				//* Anywhere 'numberFormatter.format' appears in the code below, this formats the number to add £ signs, commas and two decimal places. 
 
+for (var i = 0; i < totalMonths; i++) {
+	var currentDataPoint = finances[i];
+	var previousDataPoint = i > 0 ? finances[i - 1] : null;
+
+		//! Notes:
+				//? for ...
+				//* This is a 'for' loop that iterates through totalMonths (i.e. the 'finances' array).
+
+				//? i 
+				//* 'i' stands for "index" and is used to represent the iterator or counter in a loop. 
+
+				//? i++
+				//* This is shorthand for 'i = i + 1'. So the 'for' loop will continue as long as 'i' is less than totalMonths and increases 'i' by 1 in each iteration.
+
+				//? finances[i]
+				//* The square brackets are used to access 'i' in the finances array as the for loop iterates through it, so 'currentDataPoint' will be updated as it runs.
+
+				//?  i > 0 ? finances[i - 1] : null;
+				//* This is a ternary operator, i.e., a one-line if-else statement.
+				//* If 'i' is greater than 0, then previousDataPoint = the previous value to 'i'. If false, it assigns 'null'.
+
+				//? null
+				//* This is a JavaScript property that represents the absence of any object or value, i.e., when a variable intentionally has no value / a condition is not met.
+				//* If 'i' is not greater than 0, then previousDataPoint = null, i.e., there is no previous data point for the first iteration of the loop.
+
+				//	 i = 0:	currentDataPoint: ["Jan-2010", 867884],	previousDataPoint: null (because i > 0 condition is not met)
+				//	 i = 1: currentDataPoint: ["Feb-2010", 984655],	previousDataPoint: ["Jan-2010", 867884]
+				//	 i = 2: currentDataPoint: ["Mar-2010", 322013],	previousDataPoint: ["Feb-2010", 984655] etc.
+
+	
