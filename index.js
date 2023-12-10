@@ -109,3 +109,17 @@ averageChange /= totalMonths - 1;
 
 averageChange = numberFormatter.format(averageChange);
 
+var years = Math.floor(totalMonths / 12);
+var months = totalMonths % 12;
+
+		//! Notes:
+				//? Math.floor(x)
+				//* This rounds down the number X to nearest whole number, so:
+
+				//? Math.floor(totalMonths / 12);
+				//* This divides totalMonths by 12 and rounds down to calculate the number of whole years.
+
+				//? totalMonths % 12
+				//* In JavaScript, the % symbol is called the "remainder" or "modulo" operator. This calculates the remainding months after extracting the whole years.
+
+
