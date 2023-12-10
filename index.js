@@ -122,4 +122,23 @@ var months = totalMonths % 12;
 				//? totalMonths % 12
 				//* In JavaScript, the % symbol is called the "remainder" or "modulo" operator. This calculates the remainding months after extracting the whole years.
 
+// Show the data in the console:
+console.log(`Financial Analysis \n------------------`);
+console.log("Total Months:", `${totalMonths} (${years} years, ${months} months)`);
+console.log("Total Profits/Losses:", numberFormatter.format(totalProfitsLosses));
+console.log("Average Change:", averageChange);
+console.log("Greatest Increase in Profits/Losses:", `${greatestIncrease.date} (${numberFormatter.format(greatestIncrease.amount)})`);
+console.log("Greatest Decrease in Profits/Losses:",	`${greatestDecrease.date} (${numberFormatter.format(greatestDecrease.amount)})`);
 
+		//! Notes:
+				//? \n
+				//* This means 'new line' in JavaScript, i.e. a line break.
+
+				//? console.log
+				//* This is a JavaScript property to show the data in the browser console.
+
+				//? `${thingy} ... `
+				//* This is a template literal (AKA template string) which is a string, i.e. these are the same:
+				// console.log("Total Months: " + totalMonths + " (" + years + " years, " + months + " months)");
+				// console.log("Total Months:", `${totalMonths} (${years} years, ${months} months)`);
+				
