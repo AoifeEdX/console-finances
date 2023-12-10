@@ -72,4 +72,29 @@ for (var i = 0; i < totalMonths; i++) {
 				//	 i = 1: currentDataPoint: ["Feb-2010", 984655],	previousDataPoint: ["Jan-2010", 867884]
 				//	 i = 2: currentDataPoint: ["Mar-2010", 322013],	previousDataPoint: ["Feb-2010", 984655] etc.
 
+	totalProfitsLosses += currentDataPoint[1];
 	
+		//! Notes:
+				//? +=
+				//* This adds the left & right variables and updates left variable with the result, i.e. x += y results in x = x + y
+				
+	if (previousDataPoint) {
+		var change = currentDataPoint[1] - previousDataPoint[1];
+		averageChange += change;
+
+		if (change > greatestIncrease.amount) {
+			greatestIncrease.amount = change;
+			greatestIncrease.date = currentDataPoint[0];
+		}
+		if (change < greatestDecrease.amount) {
+			greatestDecrease.amount = change;
+			greatestDecrease.date = currentDataPoint[0];
+		}
+
+		//! Notes:
+				//? if 
+				//* This is an 'if' statement that checks whether the condition in the parentheses is true ('truthy'). If the condition is true, the code inside the curly braces ({}) is executed; otherwise, it is skipped.
+
+	}
+}
+
