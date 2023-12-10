@@ -6,8 +6,8 @@ This project uses JavaScript to analyse the financial records of a company.
 
 ### Features:
 * When the console log is viewed, it displays
-	* The total months in in the dataset, also broken down into years and months.
-	* The net total profit/losses.
+	* The total months in in the dataset, also broken down in years.
+	* The total profit/losses.
 	* The average change in profit/losses.
 	* The greatest increase in profits (date and amount).
 	* The greatest decrease in profits (date and amount).
