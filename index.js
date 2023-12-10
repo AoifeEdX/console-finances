@@ -31,3 +31,15 @@ var greatestDecrease = { date: "", amount: Infinity };
 				//? -Infinity / Infinity
 				//* This is a JavaScript placeholder value that will update to the greatest increases/decreases when the script runs. Using 0 as the value instead could produce errors with numbers greater or less than 0. Positive & negative infinity avoids those potential errors.
 
+// Number formatter:
+const numberFormatter = new Intl.NumberFormat("en-GB", {
+	style: "currency",
+	currency: "GBP",
+	minimumFractionDigits: 2,
+	maximumFractionDigits: 2,
+});
+
+		//! Notes:
+				//? Intl.NumberFormat("en-GB" ...
+				//* Anywhere 'numberFormatter.format' appears in the code below, this formats the number to add £ signs, commas and two decimal places. 
+
