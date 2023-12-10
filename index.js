@@ -142,3 +142,18 @@ console.log("Greatest Decrease in Profits/Losses:",	`${greatestDecrease.date} ($
 				// console.log("Total Months: " + totalMonths + " (" + years + " years, " + months + " months)");
 				// console.log("Total Months:", `${totalMonths} (${years} years, ${months} months)`);
 				
+// Show the values in the HTML table:
+document.getElementById("totalMonths").textContent = `${totalMonths} (${years} years, ${months} months)`;
+document.getElementById("totalNetSum").textContent = numberFormatter.format(totalProfitsLosses);
+document.getElementById("averageChange").textContent = averageChange;
+document.getElementById("profitIncreaseMonth").textContent = greatestIncrease.date;
+document.getElementById("profitIncreaseAmount").textContent = `(${numberFormatter.format(greatestIncrease.amount)})`;
+document.getElementById("profitLossMonth").textContent = greatestDecrease.date;
+document.getElementById("profitLossAmount").textContent = `(${numberFormatter.format(greatestDecrease.amount)})`;
+
+		//! Notes:
+				//? document.getElementById
+				//* This is a JavaScript property to retrieve a HTML element by its ID.
+
+				//? textContent 
+				//* This is a JavaScript property to set the text of the specified HTML element.
