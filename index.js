@@ -98,3 +98,14 @@ for (var i = 0; i < totalMonths; i++) {
 	}
 }
 
+averageChange /= totalMonths - 1;
+
+		//! Notes:
+				//? /= 
+				//* This divides the left variable by the right variable and updates the left variable with the result, i.e. x /= y results in x = x / y
+
+				//? - 1
+				//* This divides by the intervals between all months, e.g. there are 12 months in a year, but 11 intervals between the months.
+
+averageChange = numberFormatter.format(averageChange);
+
