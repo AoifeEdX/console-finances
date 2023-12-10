@@ -14,7 +14,7 @@ This project uses JavaScript to analyse the financial records of a company.
 
 * The same data is presented in a basic HTML table in the browser window.
 
-![console-finances screenshot](./images/console-finances.jpg)
+![console-finances screenshot](./Images/console-finances.jpg)
 
 
 ### Links
