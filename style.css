@@ -1,0 +1,12 @@
+body, table {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+	"Lucida Sans", Arial, sans-serif;
+	background: url('./images/bg.gif') center/cover no-repeat;
+	color: #ffffff;
+	margin: 0;
+
